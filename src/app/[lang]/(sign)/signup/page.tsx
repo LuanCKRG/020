@@ -63,4 +63,5 @@ const SignupPage = () => {
   )
 }
 
+export const dynamic = 'force-dynamic'
 export default SignupPage

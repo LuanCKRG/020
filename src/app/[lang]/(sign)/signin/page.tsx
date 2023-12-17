@@ -52,4 +52,5 @@ const SigninPage = () => {
   )
 }
 
+export const dynamic = 'force-dynamic'
 export default SigninPage
