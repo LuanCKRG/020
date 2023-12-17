@@ -23,7 +23,7 @@ input:focus {
 
 
 
-[data-theme="light"] {
+:root {
   --color-primary: #F9F4F5;
   --color-primary-light: #D1D0CD;
   --color-primary-extra-light: #F9F4F5;
