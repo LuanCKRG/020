@@ -90,20 +90,19 @@ export const FormSignup = () => {
 
 
   const createUserForm = useForm<createUserFormData>({
-    resolver: zodResolver(createUserSchema),
-    mode: "onSubmit",
-    reValidateMode: "onSubmit"
+    resolver: zodResolver(createUserSchema)
   })
   const { handleSubmit, watch, formState: { isSubmitting } } = createUserForm
 
   const handleCreateUser: SubmitHandler<createUserFormData> = async (data) => {
+
     try {
       const {users} = await getUserByEmail(data.email)
 
-      if(users && users.length > 1) {
+      if(users && users.length >= 1) {
         throw new UserAlreadyExistsError()
       }
-  
+
       await createUser(data.name, data.email, data.password).then(
         () => setMessage({text: messages["user-created"], error: false})
       )
@@ -143,11 +142,12 @@ export const FormSignup = () => {
 
           <Form.Field>
             <Form.InputField>
-              <Form.Input type={isShowing.password ? "text" : "password"} name="password" placeholder={messages.password} />
+              <Form.Input type="password" name="password" placeholder={messages.password} />
+            {/* <Form.Input type={isShowing.password ? "text" : "password"} name="password" placeholder={messages.password} />
 
-              <button onClick={() => setIsShowing((value) => ({ ...value, password: !value.password }))}>
-                {isShowing.password ? <FiEyeOff /> : <FiEye />}
-              </button>
+            <button onClick={() => setIsShowing((value) => ({ ...value, password: !value.password }))}>
+              {isShowing.password ? <FiEyeOff /> : <FiEye />}
+            </button> */}
             </Form.InputField>
 
             <Form.ErrorMessage field="password" />
@@ -155,11 +155,12 @@ export const FormSignup = () => {
 
           <Form.Field>
             <Form.InputField>
-              <Form.Input type={isShowing.reenter ? "text" : "password"} name="reenter" placeholder={messages["re-enter"]} />
+              <Form.Input type="password" name="reenter" placeholder={messages["re-enter"]} />
+              {/* <Form.Input type={isShowing.reenter ? "text" : "password"} name="reenter" placeholder={messages["re-enter"]} />
 
               <button onClick={() => setIsShowing((value) => ({ ...value, reenter: !value.reenter }))}>
                 {isShowing.reenter ? <FiEyeOff /> : <FiEye />}
-              </button>
+              </button> */}
             </Form.InputField>
 
             <Form.ErrorMessage field="reenter" />

@@ -68,7 +68,9 @@
             }
         },
         "user-already-exist": "E-mail already registered",
-        "user-created": "User created sucessfully"
+        "user-created": "User created sucessfully",
+        "user-sucessfully-signin": "User successfully signed in",
+        "user-invalid-credentials": "Invalid email or password"
     },
     "Pricing": {
         "title1": "Improve your",

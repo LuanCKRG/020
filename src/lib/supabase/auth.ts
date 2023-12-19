@@ -25,20 +25,30 @@ const supabase = createServerClient<Database>(
 )
 
 export const getUserByEmail = async (email: string) => {
-  const {data: users} = await supabase.from("user").select("*").eq("email", email)
-
+  const {data: users, error} = await supabase.from("user").select("*").eq("email", email)
+console.log(error)
   return {users}
 }
 
 export const createUser = async (name: string, email: string, password: string) => {
-  const user = await supabase.auth.signUp({
+  const {data, error} = await supabase.auth.signUp({
     email, password, options: {
       data: {
         user_name: name
       }
     }
   })
+  console.log(error)
+}
 
+export const signinUser = async (email: string, password: string) => {
+  const {data, error}  = await supabase.auth.signInWithPassword({
+    email,
+    password
+  })
+
+  console.log(error)
+  return {error}  
 }
 
 export const gogole = async () => {

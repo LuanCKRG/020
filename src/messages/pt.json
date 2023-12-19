@@ -68,7 +68,9 @@
             }
         },
         "user-already-exist": "E-mail já cadastrado",
-        "user-created": "Usuário criado com sucesso"
+        "user-created": "Usuário criado com sucesso",
+        "user-sucessfully-signin": "Usuário logado com sucesso",
+        "user-invalid-credentials": "Usuário e/ou senha inválido(s)"
     },
     "Pricing": {
         "title1": "Melhore seu conhecimento",
