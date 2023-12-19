@@ -66,7 +66,9 @@
             "reenter": {
                 "isEqual": "Passwords don't match"
             }
-        }
+        },
+        "user-already-exist": "E-mail already registered",
+        "user-created": "User created sucessfully"
     },
     "Pricing": {
         "title1": "Improve your",

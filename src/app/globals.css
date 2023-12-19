@@ -2,43 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  /* color: var(--color-primary) */
-}
 
 input:focus {
   outline: none;
 }
 
 @layer components {
-  button.outlined {
-    @apply text-primary rounded-md border-[#21262b] border-2 flex justify-center
+  .outlined {
+    @apply text-primary rounded-md border-secundary border-2 flex justify-center;
   }
 
-  button.contained {
-    @apply bg-inverted text-inverted rounded-md flex justify-center
+  .contained {
+    @apply bg-black text-white dark:bg-[#FFF] dark:text-[#000] font-semibold rounded-md flex justify-center;
   }
 
 }
 
+@layer base {
+  :root {
+    --color-primary: #FFF;
+    --color-secundary: #000;
+    --title-color: #1A;
+    --text-color-primary: #21262b;
+  }
+  
+  .dark {
+    --color-primary: #21262b;
+    --color-secundary: #303236;
+    --title-color: #FFF;
+    --text-color-primary: #CACACA;
+  }
+}
 
 
-:root {
+/* :root {
   --color-primary: #F9F4F5;
   --color-primary-light: #D1D0CD;
   --color-primary-extra-light: #F9F4F5;
   --text-color-primary: #000;
   --text-color-primary-dark: #c0d0;
-}
+} */
 
-[data-theme="dark"] {
+/* [data-theme="dark"] {
   --color-primary: #21262b;
   --color-primary-light: #282c34;
   --color-primary-extra-light: #303236;
   --text-color-primary: #fff;
   --text-color-primary-dark: #bdbebf;
-}
+} */
 
 .glassmorphism {
-  @apply rounded-xl border border-gray-200 bg-white/20 shadow-md backdrop-blur;
+  @apply rounded-xl border border-gray-200 bg-white/20 shadow-md backdrop-blur
+  dark:bg-black/20
+  dark:bg-gradient-to-b from-black/80 to-black/40
+  dark:border-gray-800
+  ;
 }

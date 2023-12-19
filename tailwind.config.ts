@@ -9,24 +9,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundColor: {
-        primary: "var(--color-primary)",
-        "primary-light": "var(--color-primary-light)",
-        "primary-extra-light": "var(--color-primary-extra-light)",
-        secundary: "var(--color-secundary)",
-        inverted: "var(--text-color-primary)",
-      },
       colors: {
         primary: "var(--color-primary)",
         secundary: "var(--color-secundary)"
       },
       textColor: {
+        title: "var(--title-color)",
         primary: "var(--text-color-primary)",
-        secundary: "var(--color-secundary)",
-        inverted: "var(--color-primary)",
-      },
-      fill: {
-        secundary: "var(--color-secundary)"
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

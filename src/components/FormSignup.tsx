@@ -7,8 +7,22 @@ import { Form } from "@/patterns/Form"
 import { FiEye, FiEyeOff } from "react-icons/fi"
 import { useState } from "react"
 import { useTranslations } from "next-intl"
+import { AiOutlineLoading } from "react-icons/ai"
+import { createUser, getUserByEmail } from "@/lib/supabase/auth"
+import { useRouter } from "next/navigation"
+import { UserAlreadyExistsError } from "@/errors/UserAlreadyExists"
+
+
 
 export const FormSignup = () => {
+  const [message, setMessage] = useState<{ text: string, error: boolean } | null>(null)
+  const [isShowing, setIsShowing] = useState<{ password: boolean, reenter: boolean }>({
+    password: false,
+    reenter: false
+  })
+
+  const {refresh} = useRouter()
+
   const t = useTranslations("Sign")
   const messages = {
     name: t("name"),
@@ -16,8 +30,9 @@ export const FormSignup = () => {
     password: t("password"),
     "re-enter": t("re-enter"),
     signup: t("signup"),
+    "user-already-exist": t("user-already-exist"),
+    "user-created": t("user-created")
   }
-
   const errorMessages= {
     name: {
       min: t("errors.name.min"),
@@ -73,10 +88,6 @@ export const FormSignup = () => {
 
   type createUserFormData = z.infer<typeof createUserSchema>
 
-  const [isShowing, setIsShowing] = useState<{ password: boolean, reenter: boolean }>({
-    password: false,
-    reenter: false
-  })
 
   const createUserForm = useForm<createUserFormData>({
     resolver: zodResolver(createUserSchema),
@@ -86,7 +97,27 @@ export const FormSignup = () => {
   const { handleSubmit, watch, formState: { isSubmitting } } = createUserForm
 
   const handleCreateUser: SubmitHandler<createUserFormData> = async (data) => {
+    try {
+      const {users} = await getUserByEmail(data.email)
 
+      if(users && users.length > 1) {
+        throw new UserAlreadyExistsError()
+      }
+  
+      await createUser(data.name, data.email, data.password).then(
+        () => setMessage({text: messages["user-created"], error: false})
+      )
+
+      refresh()
+      
+    } catch (err) {
+      if(err instanceof UserAlreadyExistsError) {
+        setMessage({text: messages["user-already-exist"], error: true})
+      } else {
+        throw err
+      }
+      
+    }
   }
 
   return (
@@ -134,8 +165,21 @@ export const FormSignup = () => {
             <Form.ErrorMessage field="reenter" />
           </Form.Field>
 
-          <button className="contained py-3">
-            {messages.signup}
+          {
+            message && 
+            <p className={`text-sm text-center ${message.error ? "text-red-500" : "text-emerald-600"}`}>
+              {message.text}!
+            </p>
+          }
+
+          <button className="contained py-3" disabled={isSubmitting}>
+            {isSubmitting ?
+              <span className="animate-spin">
+                <AiOutlineLoading size={30} />
+              </span>
+              :
+              messages.signup
+            }
           </button>
 
         </div>

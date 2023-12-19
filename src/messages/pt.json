@@ -66,7 +66,9 @@
             "reenter": {
                 "isEqual": "As senhas devem ser iguais"
             }
-        }
+        },
+        "user-already-exist": "E-mail já cadastrado",
+        "user-created": "Usuário criado com sucesso"
     },
     "Pricing": {
         "title1": "Melhore seu conhecimento",

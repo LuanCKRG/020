@@ -9,6 +9,6 @@ export const Input: React.FC<InputProps> = ({name, ...props}) => {
   const {register} = useFormContext()
   
   return (
-    <input className="w-full bg-inherit" {...register(name)} {...props} />
+    <input className="w-full bg-transparent" {...register(name)} {...props} />
   )
 }

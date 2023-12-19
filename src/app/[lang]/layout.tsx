@@ -4,6 +4,7 @@ import '@/app/globals.css'
 import { notFound } from 'next/navigation'
 import { AbstractIntlMessages, NextIntlClientProvider } from 'next-intl'
 import { ThemesProvider } from '@/providers/ThemesProvider'
+import { ToggleThemeButton } from '@/components/ToggleThemeButton'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -36,9 +37,10 @@ const RootLayout = async ({ children, params: { lang } }: RootLayoutProps) => {
     <html lang={lang} className="light">
       <body className={inter.className}>
         <NextIntlClientProvider locale={lang} messages={messages}>
-          {/* <ThemesProvider> */}
+          <ThemesProvider>
+          <ToggleThemeButton />
             {children}
-          {/* </ThemesProvider> */}
+          </ThemesProvider>
         </NextIntlClientProvider>
       </body>
     </html>
