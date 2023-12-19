@@ -6,8 +6,8 @@ import { Database } from '@/types/supabase'
 
 const cookieStore = cookies()
 
-const supabase_url = process.env.NEXT_PUBLIC_SUPABASE_URL!
-const supabase_anon_key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+const supabase_url = "https://zwafjrgikpqnorxkzjqh.supabase.co"
+const supabase_anon_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp3YWZqcmdpa3Bxbm9yeGt6anFoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDI5MjY1NzIsImV4cCI6MjAxODUwMjU3Mn0.Md4rm7fc-ftZ9fwDGeWm373BT_jTTL_CcTDx5M0OR0Y"
 const supabase = createServerClient<Database>(
   supabase_url,
   supabase_anon_key,
