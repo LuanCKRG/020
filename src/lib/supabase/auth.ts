@@ -2,14 +2,15 @@
 
 import { cookies } from 'next/headers'
 import { createServerClient, type CookieOptions } from '@supabase/ssr'
-import { UserMetadata } from '@supabase/supabase-js'
 import { Database } from '@/types/supabase'
 
 const cookieStore = cookies()
 
+const supabase_url = process.env.NEXT_PUBLIC_SUPABASE_URL!
+const supabase_anon_key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
 const supabase = createServerClient<Database>(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  supabase_url,
+  supabase_anon_key,
   {
     cookies: {
       get(name: string) {
