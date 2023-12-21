@@ -32,7 +32,11 @@ export const NavBar = () => {
           <div className="hidden sm:flex sm:gap-x-3 sm:items-center ">
             <ToggleLocaleButton />
             <ToggleThemeButton />
-            Perfil
+            <Link href="/signin">
+                  <button className="contained px-8 py-2">
+                    Entrar
+                  </button>
+                </Link>
           </div>
 
           <button className="sm:hidden" onClick={() => setIsMobileMenuOpen(prev => !prev)}>
