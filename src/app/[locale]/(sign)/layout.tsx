@@ -1,4 +1,4 @@
-import Link from "next/link"
+import { Link } from "@/navigation"
 
 const SignLayout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -14,5 +14,4 @@ const SignLayout = ({ children }: { children: React.ReactNode }) => {
   )
 }
 
-export const dynamic = 'force-dynamic'
 export default SignLayout

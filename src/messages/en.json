@@ -1,88 +1,13 @@
 {
-    "Index": {
-        "title": "Hello world!"
-    },
-    "Nav": {
-        "home": "HOME",
-        "about": "ABOUT US",
-        "pricing": "PRICING",
-        "signin": "Sign In",
-        "signup": "Sign Up",
-        "profile": "Profile",
-        "signout": "Sign Out"
-    },
-    "Hero": {
-        "invest": "Invest",
-        "smartly": "smartly",
-        "start": "Start Today",
-        "learn": "Learn More"
-    },
-    "WhyUs": {
-        "whyUs": "Why Us",
-        "forAll": "For All",
-        "forAllDesc": "It doesn't matter if you are a beginner or an experienced investor, Yield Master is designed to meet all needs. With an intuitive and easy-to-navigate interface, you will have all the information you need to make the best investment decisions, without the need for advanced technical knowledge.",
-        "help": "We Help You",
-        "helpDesc": "With Yield Master, you will have access to an intelligent system that analyzes financial market data in real time, identifying the most favorable times to invest in companies that have dividend growth potential. Our exclusive algorithm considers a series of indicators and trends, providing you with valuable information to make your investment decisions more strategically.",
-        "join": "Join Us",
-        "joinDesc": "With Yield Master, you will have access to an intelligent system that analyzes financial market data in real time, identifying the most favorable times to invest in companies that have dividend growth potential. Our exclusive algorithm considers a series of indicators and trends, providing you with valuable information to make your investment decisions more strategically."
-    },
-    "Sign": {
-        "signin": "Sign in to your account",
-        "signup": "Create your account",
-        "googleLogin": "Sign in with Google",
-        "facebookLogin": "Sign in with Facebook",
-        "googleCreate": "Continue with Google",
-        "facebookCreate": "Continue with Facebook",
-        "dontHave": "Don't have an account?",
-        "signUp": "Sign Up",
-        "have": "Already have an account?",
-        "signIn": "Sign In",
-        "agree": "By entering you agree to our",
-        "terms": "terms of use",
-        "and": "and",
-        "privacy": "privacy policies",
-        "or": "OR",
-        "email": "Email",
-        "password": "Password",
-        "name": "Name",
-        "re-enter": "Re-enter Password",
-        "forgotPassword": "Forgot Password ?",
-        "errors": {
-            "name": {
-                "min": "Required",
-                "max": "Limit is 80"
-            },
-            "email": {
-                "min": "Required",
-                "max": "Limit is 80",
-                "isValid": "Invalid e-mail"
-            },
-            "password": {
-                "min": "Password must be needs at least 8 characters",
-                "max": "Limit is 100",
-                "isWeak": "Weak password",
-                "isStrong": "Strong password"
-            },
-            "reenter": {
-                "isEqual": "Passwords don't match"
-            }
-        },
-        "user-already-exist": "E-mail already registered",
-        "user-created": "User created sucessfully",
-        "user-sucessfully-signin": "User successfully signed in",
-        "user-invalid-credentials": "Invalid email or password"
-    },
-    "Pricing": {
-        "title1": "Improve your",
-        "title2": "investing knowledge",
-        "desc": "Yieldmaster gives you the tools and information to find the winners. No ads. No noise. Just news and analysis you can trust.",
-        "sale": "ON SALE!",
-        "freeTrail": "Start 7-day free trial",
-        "subscribe": "Subscribe now",
-        "coupon": "Apply coupon",
-        "code": "enter coupon code",
-        "apply": "Apply",
-        "error": "Coupon invalid or expired"
+
+    "Footer": {
+        "home": "Home",
+        "pricing": "Pricing",
+        "about": "About us",
+        "terms": "Terms of use",
+        "policy": "Privacy policies",
+        "contact": "Contact",
+        "follow": "Follow us"
     },
     "Faq": {
         "question1": {
@@ -118,97 +43,82 @@
             "answer": "Yes, Yield Master has a dedicated customer support team ready to assist users with any queries or issues related to using the platform. Support can be contacted via email at support@yieldmastr.io"
         }
     },
-    "Footer": {
-        "home": "Home",
-        "pricing": "Pricing",
-        "about": "About us",
-        "terms": "Terms of use",
-        "policy": "Privacy policies",
-        "contact": "Contact",
-        "follow": "Follow us"
+    "Hero": {
+        "invest": "Invista de",
+        "smartly": "forma inteligente",
+        "start": "Começa hoje",
+        "learn": "Saber mais"
     },
-    "Tos": {
-        "title": "Terms of use",
-        "phase1": "1. Terms By accessing the website at Yield Master you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.",
-        "phase2": "2. Use License Permission is granted to temporarily download one copy of the materials (information or software) on Yield Master's website for personal, non-commercial transitory viewing only. This is the grant of a licence, not a transfer of title, and under this licence you may not:modify or copy the materials;use the materials for any commercial purpose, or for any public display (commercial or non-commercial);attempt to decompile or reverse engineer any software contained on Yield Master website;remove any copyright or other proprietary notations from the materials; ortransfer the materials to another person or 'mirror' the materials on any other server.This licence shall automatically terminate if you violate any of these restrictions and may be terminated by Yield Master at any time. Upon terminating your viewing of these materials or upon the termination of this licence, you must destroy any downloaded materials in your possession whether in electronic or printed format.",
-        "phase3": "3. Disclaimer The materials on Yield Master's website are provided on an 'as is' basis. Yield Master makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.Further, Yield Master does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.",
-        "phase4": "4. Limitations In no event shall Yield Master or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on Yield Master's website, even if Yield Master or a Yield Master authorised representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.",
-        "phase5": "5. Accuracy of materialsThe materials appearing on Yield Master's website could include technical, typographical, or photographic errors. Yield Master does not warrant that any of the materials on its website are accurate, complete or current. Yield Master may make changes to the materials contained on its website at any time without notice. However Yield Master does not make any commitment to update the materials.",
-        "phase6": "6. Links Yield Master has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Yield Master of the site. Use of any such linked website is at the user's own risk.",
-        "phase7": "7. Modifications Yield Master may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.",
-        "phase8": "8. Governing Law These terms and conditions are governed by and construed in accordance with the laws of Yield Master and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location."
+    "WhyUs": {
+        "whyUs": "Por que nós",
+        "forAll": "Para todos",
+        "forAllDesc": "Não importa se você é iniciante ou um investidor experiente, o Yield Master foi projetado para atender a todas as necessidades. Com uma interface intuitiva e de fácil navegação, você terá todas as informações necessárias para tomar as melhores decisões de investimento, sem a necessidade de conhecimentos técnicos avançados.",
+        "help": "Nós ajudamos você",
+        "helpDesc": "Com o Yield Master você terá acesso a um sistema inteligente que analisa dados do mercado financeiro em tempo real, identificando os momentos mais favoráveis ​​para investir em empresas que tenham potencial de crescimento de dividendos. Nosso algoritmo exclusivo considera uma série de indicadores e tendências, fornecendo informações valiosas para você tomar suas decisões de investimento de forma mais estratégica.",
+        "join": "Junte-se a nós",
+        "joinDesc": "Com o Yield Master você terá acesso a um sistema inteligente que analisa dados do mercado financeiro em tempo real, identificando os momentos mais favoráveis ​​para investir em empresas que tenham potencial de crescimento de dividendos. Nosso algoritmo exclusivo considera uma série de indicadores e tendências, fornecendo informações valiosas para você tomar suas decisões de investimento de forma mais estratégica."
     },
-    "Newsletter": {
-        "title": "Subscribe to our Newsletter!",
-        "placeholder": "Enter your email",
-        "subscribe": "Subscribe"
+    "literal": {
+        "or": "or",
+        "signin": "Sign In",
+        "signup": "Sign Up",
+        "signout": "Sign Out"
     },
-    "PrivacyPolicy": {
-        "title": "Privacy policies",
-        "policy1": {
-            "title": "Privacy Policy for Yield Master",
-            "content": "At Yield Master, accessible from www.yieldmaster.io, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Yield Master and how we use it. If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us."
+
+    "sign": {
+
+        "inputs": {
+            "name": "Name",
+            "email": "Email",
+            "password": "Password",
+            "re-enter": "Re-enter Password"
         },
-        "policy2": {
-            "title": "Log Files",
-            "content": "Yield Master follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information. Our Privacy Policy was created with the help of the Privacy Policy Generator."
+
+        "signin": {
+            "title": "Sign in to your account",
+            "forgotPassword": "Forgot Password?",
+            "sucessfully": "User successfully signed in",
+            "failed": "Invalid email or password",
+            "footer": "Don't have an account?",
+            "google": "Sign in with Google",
+            "facebook": "Sign in with Facebook"
         },
-        "policy3": {
-            "title": "Cookies and Web Beacons",
-            "content": "Like any other website, Yield Master uses \"cookies\". These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information. For more general information on cookies, please read the \"Cookies\" article from the Privacy Policy Generator."
+
+        "signup": {
+            "title": "Create your account",
+            "sucessfully": "E-mail already registered",
+            "failed": "User created sucessfully",
+            "footer": "Already have an account?",
+            "google": "Continue with Google",
+            "facebook": "Continue with Facebook"
         },
-        "policy4": {
-            "title": "Google DoubleClick DART Cookie",
-            "content": "Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to www.website.com and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL – https://policies.google.com/technologies/ads"
+
+        "terms-and-policies": {
+            "agree": "By entering you agree to our",
+            "terms": "terms of use",
+            "and": "and",
+            "privacy": "privacy policies"
         },
-        "policy5": {
-            "title": "Privacy Policies",
-            "content": "You may consult this list to find the Privacy Policy for each of the advertising partners of Yield Master. Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on Yield Master, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.Note that Yield Master has no access to or control over these cookies that are used by third-party advertisers."
-        },
-        "policy6": {
-            "title": "Third Party Privacy Policies",
-            "content": "Yield Master's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites."
-        },
-        "policy7": {
-            "title": "Children's Information",
-            "content": "Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity. Yield Master does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records."
-        },
-        "policy8": {
-            "title": "Online Privacy Policy Only",
-            "content": "This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Yield Master. This policy is not applicable to any information collected offline or via channels other than this website. Consent By using our website, you hereby consent to our Privacy Policy and agree to its Terms and Conditions."
+
+        "errors": {
+            "name": {
+                "min": "Required",
+                "max": "Limit is 80"
+            },
+            "email": {
+                "min": "Required",
+                "max": "Limit is 80",
+                "isValid": "Invalid e-mail"
+            },
+            "password": {
+                "min": "Password must be needs at least 8 characters",
+                "max": "Limit is 100",
+                "isWeak": "Weak password",
+                "isStrong": "Strong password"
+            },
+            "reenter": {
+                "isEqual": "Passwords don't match"
+            }
         }
-    },
-    "AboutUs": {
-        "title": "About YieldMaster",
-        "content": "Welcome to YieldMaster, where innovation meets investment excellence! At YieldMaster, we are committed to redefining the landscape of financial possibilities through cutting-edge technology and a passion for empowering our clients.",
-        "section1": {
-            "title": "Our Vision",
-            "content": "YieldMaster was founded with a clear vision – to create a platform that seamlessly integrates advanced financial strategies with user-friendly interfaces. Our goal is to empower both seasoned investors and newcomers, providing them with the tools and insights needed to navigate the dynamic world of finance successfully."
-        },
-        "section2": {
-            "title": "Our Commitment to Excellence",
-            "content": "At YieldMaster, excellence is not just a goal; it's our standard. We strive to deliver top-notch financial solutions that cater to the unique needs of our clients. Our team of experts combines industry knowledge with a commitment to staying ahead of the curve, ensuring that our users always have a competitive edge."
-        },
-        "section3": {
-            "title": "Transparency and Trust",
-            "content": "Trust is the foundation of every successful financial relationship. YieldMaster is committed to transparency in all aspects of our operations. From clear communication to providing comprehensive data, we believe in fostering trust with our clients. Your peace of mind is our priority."
-        }
-    },
-    "Checkout": {
-        "title": "Choose Payment Methods",
-        "credit": "Credit/Debit Card",
-        "paypal": "PayPal",
-        "creditCard": "Credit/Debit Card Details",
-        "paypalDetails": "PayPal Details",
-        "name": "Cardholder's Name",
-        "number": "Card Number",
-        "cvv": "CVV",
-        "add": " Add Details",
-        "email": "PayPal Email",
-        "Summary": "Summary",
-        "Price": "Price",
-        "Discount": "Discount",
-        "Total": "Total",
-        "Checkout": "Checkout"
     }
 }

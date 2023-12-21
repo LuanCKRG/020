@@ -19,39 +19,18 @@ export const FormSignin = () => {
     reenter: false
   })
 
-  const t = useTranslations("Sign")
-  const messages = {
-    email: t("email"),
-    password: t("password"),
-    signin: t("signin"),
-    "user-sucessfully-signin": t("user-sucessfully-signin"),
-    "user-invalid-credentials": t("user-invalid-credentials")
-  }
-
-  const errorMessages = {
-    email: {
-      min: t("errors.email.min"),
-      max: t("errors.email.max"),
-      isValid: t("errors.email.isValid")
-    },
-    password: {
-      min: t("errors.password.min"),
-      max: t("errors.password.max"),
-      isWeak: t("errors.password.isWeak"),
-      isStrong: t("errors.password.isStrong")
-    }
-  }
-
+  const t = useTranslations()
+  
   const signinUserSchema = z.object({
     email: z.string()
       .trim()
       .toLowerCase()
-      .email(errorMessages.email.isValid)
-      .min(1, errorMessages.email.min)
-      .max(80, errorMessages.email.max),
+      .email(t("sign.errors.email.isValid"))
+      .min(1, t("sign.errors.email.min"))
+      .max(80, t("sign.errors.email.max")),
     password: z.string()
-      .min(8, errorMessages.password.min)
-      .max(100, errorMessages.password.max)
+      .min(8, t("sign.errors.password.min"))
+      .max(100, t("sign.errors.password.max"))
 
   })
 
@@ -79,11 +58,11 @@ export const FormSignin = () => {
       if(error) {
         throw error
       }      
-      setMessage({ text: messages["user-sucessfully-signin"], error: false })
+      setMessage({ text: t("sign.signin.sucessfully"), error: false })
 
     } catch (err) {
       if(err instanceof InvalidCredentialsError) {
-        setMessage({ text: messages["user-invalid-credentials"], error: true })
+        setMessage({ text: t("sign.signin.failed"), error: true })
 
       } else {
         throw err
@@ -98,7 +77,7 @@ export const FormSignin = () => {
 
           <Form.Field>
             <Form.InputField>
-              <Form.Input name="email" placeholder={messages.email} />
+              <Form.Input name="email" placeholder={t("sign.inputs.email")} />
             </Form.InputField>
 
             <Form.ErrorMessage field="email" />
@@ -106,7 +85,7 @@ export const FormSignin = () => {
 
           <Form.Field>
             <Form.InputField>
-              <Form.Input type="password" name="password" placeholder={messages.password} />
+              <Form.Input type="password" name="password" placeholder={t("sign.inputs.password")} />
               {/* <Form.Input type={isShowing.password ? "text" : "password"} name="password" placeholder={messages.password} />
 
               <button onClick={() => setIsShowing((value) => ({ ...value, password: !value.password }))}>
@@ -129,7 +108,7 @@ export const FormSignin = () => {
                 <AiOutlineLoading size={30} />
               </span>
               :
-              messages.signin
+              t("sign.signin.title")
             }
           </button>
 

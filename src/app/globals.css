@@ -58,3 +58,26 @@ input:focus {
   dark:border-gray-800
   ;
 }
+
+.showcase {
+  min-height: 100vh;
+  @apply w-full ;
+  background-image: url("../assets/hero.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  background-size: cover;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+
+.footer {
+  @apply w-full z-10 relative;
+  background-image: url("../assets/footer.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  background-size: cover;
+  border-top-left-radius: 50% 30%;
+  border-top-right-radius: 50% 30%;
+}

@@ -4,7 +4,8 @@ import '@/app/globals.css'
 import { notFound } from 'next/navigation'
 import { AbstractIntlMessages, NextIntlClientProvider } from 'next-intl'
 import { ThemesProvider } from '@/providers/ThemesProvider'
-import { ToggleThemeButton } from '@/components/ToggleThemeButton'
+import { NavBar } from '@/components/NavBar'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,30 +17,31 @@ export const metadata: Metadata = {
 interface RootLayoutProps {
   children: React.ReactNode
   params: {
-    lang: string
+    locale: string
   }
 }
 
 export const generateStaticParams = () => {
-  return [{ lang: 'en' }, { lang: 'pt' }]
+  return [{ locale: 'en' }, { locale: 'pt' }]
 }
 
-const RootLayout = async ({ children, params: { lang } }: RootLayoutProps) => {
+const RootLayout = async ({ children, params: { locale } }: RootLayoutProps) => {
 
   let messages: AbstractIntlMessages
   try {
-    messages = (await import(`@/messages/${lang}.json`)).default
+    messages = (await import(`@/messages/${locale}.json`)).default
   } catch (error) {
     notFound()
   }
 
   return (
-    <html lang={lang} className="light">
+    <html lang={locale}>
       <body className={inter.className}>
-        <NextIntlClientProvider locale={lang} messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemesProvider>
-          <ToggleThemeButton />
+            <NavBar />
             {children}
+            <Footer />
           </ThemesProvider>
         </NextIntlClientProvider>
       </body>

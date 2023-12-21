@@ -2,6 +2,8 @@
 
 import { useTheme } from "next-themes"
 import { useState, useEffect } from "react"
+import { MdLightMode, MdDarkMode } from "react-icons/md"
+
 
 export const ToggleThemeButton = () => {
   const { setTheme, theme } = useTheme()
@@ -15,20 +17,19 @@ export const ToggleThemeButton = () => {
     return null
   }
 
-  return (
-    <ul>
+  if(theme === "dark") {
+    return (
+      <button className="flex justify-center" onClick={() => setTheme("light")}>
+        <MdLightMode size={30}/>
+      </button>
+    )
+  }
 
-      <li>
-        <button onClick={() => setTheme("light")}>
-          Light
-        </button>
-      </li>
-      <li>
-        <button onClick={() => setTheme("dark")}>
-          Dark
-        </button>
-      </li>
-    </ul>
-
-  )
+  if(theme === "light") {
+    return (
+      <button className="flex justify-center" onClick={() => setTheme("dark")}>
+        <MdDarkMode size={30}/>
+      </button>
+    )
+  }
 }

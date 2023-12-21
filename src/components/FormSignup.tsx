@@ -23,42 +23,13 @@ export const FormSignup = () => {
 
   const {refresh} = useRouter()
 
-  const t = useTranslations("Sign")
-  const messages = {
-    name: t("name"),
-    email: t("email"),
-    password: t("password"),
-    "re-enter": t("re-enter"),
-    signup: t("signup"),
-    "user-already-exist": t("user-already-exist"),
-    "user-created": t("user-created")
-  }
-  const errorMessages= {
-    name: {
-      min: t("errors.name.min"),
-      max: t("errors.name.max")
-    },
-    email: {
-      min: t("errors.email.min"),
-      max: t("errors.email.max"),
-      isValid: t("errors.email.isValid")
-    },
-    password: {
-      min: t("errors.password.min"),
-      max: t("errors.password.max"),
-      isWeak: t("errors.password.isWeak"),
-      isStrong: t("errors.password.isStrong")
-    },
-    reenter: {
-      isEqual: t("errors.reenter.isEqual")
-    }
-  }
-
+  const t = useTranslations()
+  
   const createUserSchema = z.object({
     name: z.string()
       .trim()
-      .min(1, errorMessages.name.min)
-      .max(80, errorMessages.name.max)
+      .min(1, t("sign.errors.name.min"))
+      .max(80, t("sign.errors.name.max"))
       .transform(
         (name) => {
           return name.split(" ").map(
@@ -71,19 +42,18 @@ export const FormSignup = () => {
     email: z.string()
       .trim()
       .toLowerCase()
-      .min(1, errorMessages.email.min)
-      .max(80, errorMessages.email.max)
-      .email(errorMessages.email.isValid),
+      .min(1, t("sign.errors.email.min"))
+      .max(80, t("sign.errors.email.max"))
+      .email(t("sign.errors.email.isValid")),
     password: z.string()
-      .min(8, errorMessages.password.min)
-      .max(100, errorMessages.password.max)
-      .regex(new RegExp("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})"), errorMessages.password.isWeak),
+      .min(4, t("sign.errors.password.min"))
+      .max(100, t("sign.errors.password.max")),
     reenter: z.string()
 
   }).refine(
     ({ password, reenter }) => password === reenter, {
     path: ["reenter"],
-    message: errorMessages.reenter.isEqual
+    message: t("sign.errors.reenter.isEqual")
   })
 
   type createUserFormData = z.infer<typeof createUserSchema>
@@ -104,14 +74,14 @@ export const FormSignup = () => {
       }
 
       await createUser(data.name, data.email, data.password).then(
-        () => setMessage({text: messages["user-created"], error: false})
+        () => setMessage({text: t("sign.signup.sucessfully"), error: false})
       )
 
       refresh()
       
     } catch (err) {
       if(err instanceof UserAlreadyExistsError) {
-        setMessage({text: messages["user-already-exist"], error: true})
+        setMessage({text: t("sign.signup.failed"), error: true})
       } else {
         throw err
       }
@@ -126,7 +96,7 @@ export const FormSignup = () => {
 
           <Form.Field>
             <Form.InputField>
-              <Form.Input name="name" placeholder={messages.name} />
+              <Form.Input name="name" placeholder={t("sign.inputs.name")} />
             </Form.InputField>
 
             <Form.ErrorMessage field="name" />
@@ -134,7 +104,7 @@ export const FormSignup = () => {
 
           <Form.Field>
             <Form.InputField>
-              <Form.Input name="email" placeholder={messages.email} />
+              <Form.Input name="email" placeholder={t("sign.inputs.email")} />
             </Form.InputField>
 
             <Form.ErrorMessage field="email" />
@@ -142,7 +112,7 @@ export const FormSignup = () => {
 
           <Form.Field>
             <Form.InputField>
-              <Form.Input type="password" name="password" placeholder={messages.password} />
+              <Form.Input type="password" name="password" placeholder={t("sign.inputs.password")} />
             {/* <Form.Input type={isShowing.password ? "text" : "password"} name="password" placeholder={messages.password} />
 
             <button onClick={() => setIsShowing((value) => ({ ...value, password: !value.password }))}>
@@ -155,7 +125,7 @@ export const FormSignup = () => {
 
           <Form.Field>
             <Form.InputField>
-              <Form.Input type="password" name="reenter" placeholder={messages["re-enter"]} />
+              <Form.Input type="password" name="reenter" placeholder={t("sign.inputs.re-enter")} />
               {/* <Form.Input type={isShowing.reenter ? "text" : "password"} name="reenter" placeholder={messages["re-enter"]} />
 
               <button onClick={() => setIsShowing((value) => ({ ...value, reenter: !value.reenter }))}>
@@ -179,7 +149,7 @@ export const FormSignup = () => {
                 <AiOutlineLoading size={30} />
               </span>
               :
-              messages.signup
+              t("sign.signup.title")
             }
           </button>
 
