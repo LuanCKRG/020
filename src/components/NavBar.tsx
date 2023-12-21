@@ -18,7 +18,7 @@ export const NavBar = () => {
 
         <ul className="hidden sm:flex gap-x-3 uppercase flex-1">
           <li>
-            <Link href="/home">{"home"}</Link>
+            <Link href="/">{"home"}</Link>
           </li>
           <li>
             <Link href="/pricing">{"price"}</Link>
