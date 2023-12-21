@@ -6,4 +6,5 @@ const TermsOfUsePage = () => {
   )
 }
 
+export const dynamic = 'force-dynamic'
 export default TermsOfUsePage
