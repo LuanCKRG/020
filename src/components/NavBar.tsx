@@ -33,7 +33,7 @@ export const NavBar = () => {
             <ToggleLocaleButton />
             <ToggleThemeButton />
             <Link href="/signin">
-                  <button className="contained px-8 py-2">
+                  <button className="contained px-4 py-2">
                     Entrar
                   </button>
                 </Link>
