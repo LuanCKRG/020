@@ -41,6 +41,12 @@ const SignupPage = () => {
         </Link>
       </p>
 
+    <p className="text-sm text-primary underline font-bold">
+      <Link href="/disclaimer">
+        Disclaimer
+      </Link>
+    </p>
+
       <p className="text-primary text-sm font-medium">
         {t("sign.signup.footer") + " "}
         <Link href="/signin" className="font-bold text-blue-700">

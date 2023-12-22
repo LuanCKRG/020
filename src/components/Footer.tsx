@@ -19,8 +19,10 @@ const Footer = () => {
 
                     <div className='flex flex-col gap-2 items-center md:items-start font-inter'>
                         <div className='flex items-center gap-2 md:hidden'>
-                            <div className='w-8 sm:w-12 h-8 sm:h-12 rounded-full grid place-items-center bg-primary'>
-                                <span className='text-xs sm:text-sm font-inter font-semibold text-white'>ym.</span>
+                            <div className='w-8 sm:w-12 h-8 sm:h-12 rounded-full grid place-items-center bg-black dark:bg-black'>
+                                <span className='text-xs sm:text-sm font-inter font-semibold text-white'>
+                                    ym.
+                                </span>
                             </div>
 
                             <h3 className='font-lato text-base sm:text-xl  font-bold uppercase'>

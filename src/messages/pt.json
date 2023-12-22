@@ -1,134 +1,218 @@
 {
-    "Tos": {
-        "title": "Termos de uso",
-        "phase1": "1. TermosAo acessar ao site Yield Master, concorda em cumprir estes termos de serviço, todas as leis e regulamentos aplicáveis ​​e concorda que é responsável pelo cumprimento de todas as leis locais aplicáveis. Se você não concordar com algum desses termos, está proibido de usar ou acessar este site. Os materiais contidos neste site são protegidos pelas leis de direitos autorais e marcas comerciais aplicáveis.",
-        "phase2": "2. Uso de LicençaÉ concedida permissão para baixar temporariamente uma cópia dos materiais (informações ou software) no site Yield Master , apenas para visualização transitória pessoal e não comercial. Esta é a concessão de uma licença, não uma transferência de título e, sob esta licença, você não pode: modificar ou copiar os materiais; usar os materiais para qualquer finalidade comercial ou para exibição pública (comercial ou não comercial); tentar descompilar ou fazer engenharia reversa de qualquer software contido no site Yield Master; remover quaisquer direitos autorais ou outras notações de propriedade dos materiais; ou transferir os materiais para outra pessoa ou 'espelhe' os materiais em qualquer outro servidor.Esta licença será automaticamente rescindida se você violar alguma dessas restrições e poderá ser rescindida por Yield Master a qualquer momento. Ao encerrar a visualização desses materiais ou após o término desta licença, você deve apagar todos os materiais baixados em sua posse, seja em formato eletrónico ou impresso.",
-        "phase3": "3. Isenção de responsabilidadeOs materiais no site da Yield Master são fornecidos 'como estão'. Yield Master não oferece garantias, expressas ou implícitas, e, por este meio, isenta e nega todas as outras garantias, incluindo, sem limitação, garantias implícitas ou condições de comercialização, adequação a um fim específico ou não violação de propriedade intelectual ou outra violação de direitos.Além disso, o Yield Master não garante ou faz qualquer representação relativa à precisão, aos resultados prováveis ​​ou à confiabilidade do uso dos materiais em seu site ou de outra forma relacionado a esses materiais ou em sites vinculados a este site.",
-        "phase4": "4. LimitaçõesEm nenhum caso o Yield Master ou seus fornecedores serão responsáveis ​​por quaisquer danos (incluindo, sem limitação, danos por perda de dados ou lucro ou devido a interrupção dos negócios) decorrentes do uso ou da incapacidade de usar os materiais em Yield Master, mesmo que Yield Master ou um representante autorizado da Yield Master tenha sido notificado oralmente ou por escrito da possibilidade de tais danos. Como algumas jurisdições não permitem limitações em garantias implícitas, ou limitações de responsabilidade por danos conseqüentes ou incidentais, essas limitações podem não se aplicar a você.",
-        "phase5": "5. Precisão dos materiaisOs materiais exibidos no site da Yield Master podem incluir erros técnicos, tipográficos ou fotográficos. Yield Master não garante que qualquer material em seu site seja preciso, completo ou atual. Yield Master pode fazer alterações nos materiais contidos em seu site a qualquer momento, sem aviso prévio. No entanto, Yield Master não se compromete a atualizar os materiais.",
-        "phase6": "6. Links Yield Master não revisou todos os sites vinculados ao seu site e não é responsável pelo conteúdo de nenhum site vinculado. A inclusão de qualquer link não implica endosso por Yield Master do site. O uso de qualquer site vinculado é por conta e risco do usuário.",
-        "phase7": "7. Modificações A Yield Master pode revisar estes termos de serviço de seu site a qualquer momento, sem aviso prévio. Ao usar este site, você concorda em ficar vinculado à versão atual destes termos de serviço.",
-        "phase8": "8. Legislação aplicável Estes termos e condições são regidos e interpretados de acordo com as leis do Yield Master e você se submete irrevogavelmente à jurisdição exclusiva dos tribunais naquele estado ou localidade."
+  "Pricing": {
+    "title1": "Melhore seu conhecimento",
+    "title2": "sobre investimentos",
+    "desc": "Yieldmaster fornece as ferramentas e informações para encontrar os vencedores. Sem anúncios. Sem barulho. Apenas notícias e análises em que você pode confiar.",
+    "sale": "À VENDA!",
+    "freeTrail": "Comece um teste gratuito de 7 dias",
+    "subscribe": "Inscreva-se agora",
+    "coupon": "Aplicar cupom",
+    "code": "Digite o código do cupom",
+    "apply": "Aplicar",
+    "error": "Cupom inválido ou expirado"
+  },
+  "AboutUs": {
+    "title": "Sobre nós",
+    "content": "Bem-vindo ao YieldMaster, onde a inovação encontra a excelência em investimentos! Na YieldMaster, estamos comprometidos em redefinir o cenário de possibilidades financeiras por meio de tecnologia de ponta e uma paixão por capacitar nossos clientes.",
+    "section1": {
+      "title": "Nossa visão",
+      "content": "A YieldMaster foi fundada com uma visão clara – criar uma plataforma que integre perfeitamente estratégias financeiras avançadas com interfaces fáceis de usar. Nosso objetivo é capacitar investidores experientes e recém-chegados, fornecendo-lhes as ferramentas e os insights necessários para navegar com sucesso no mundo dinâmico das finanças."
     },
-    "Footer": {
-        "home": "Home",
-        "pricing": "Preços",
-        "about": "Sobre nós",
-        "terms": "Termos de uso",
-        "policy": "Políticas de privacidade",
-        "contact": "Contatot",
-        "follow": "Siga-nos"
+    "section2": {
+      "title": "Nosso Compromisso com a Excelência",
+      "content": "Na YieldMaster, a excelência não é apenas um objetivo; é o nosso padrão. Nós nos esforçamos para oferecer soluções financeiras de alto nível que atendam às necessidades exclusivas de nossos clientes. Nossa equipe de especialistas combina o conhecimento do setor com o compromisso de estar sempre à frente da concorrência, garantindo que nossos usuários sempre tenham uma vantagem competitiva. "
     },
-    "Faq": {
-        "question1": {
-            "question": "Quais são os principais benefícios de utilizar o Yield Master?",
-            "answer": "O YIeld Master permite que você tome decisões de investimento mais estratégicas e embasadas, reduzindo o risco de perdas financeiras. Além disso, ele ajuda a maximizar o potencial de crescimento de seus dividendos, permitindo que você alcance seus objetivos financeiros mais rapidamente."
-        },
-        "question2": {
-            "question": "O Yield Master é adequado para investidores iniciantes?",
-            "answer": "Sim, o Yield Master pode ser utilizado por investidores iniciantes, pois fornece recomendações claras e objetivas. Ele ajuda a reduzir a complexidade do mercado financeiro e fornece orientações para tomar decisões de investimento mais fundamentadas."
-        },
-        "question3": {
-            "question": "Quais são as formas de pagamento?",
-            "answer": "Você pode pagar com Cartão de Crédito ou via Paypal, entre várias outras formas. "
-        },
-        "question4": {
-            "question": "E se perceber que não era pra mim?",
-            "answer": "Você tem 7 dias grátis para experimentar a plataforma. Se decidir que não é pra você basta pedir reembolso na plataforma ou enviar um e-mail para contact@yieldmaster.io"
-        },
-        "question5": {
-            "question": "Por quanto tempo terei acesso?",
-            "answer": "O Plano é Anual. Terá acesso pelo tempo que manter ativa sua assinatura."
-        },
-        "question6": {
-            "question": "O Yield Master fornece recomendações de compra e venda de ativos?",
-            "answer": "Sim, o Yield Master fornece recomendações de compra e venda de ativos com base em sua análise. No entanto, é sempre importante lembrar que essas recomendações são baseadas em análises e dados passados, e não garantem resultados futuros. Os investidores devem sempre avaliar as recomendações do Yield Master junto com sua própria análise e tomar suas próprias decisões de investimento."
-        },
-        "question7": {
-            "question": "Posso confiar nas análises e recomendações do Yield Master?",
-            "answer": "Sim, o Yield Master é desenvolvido por uma equipe de especialistas financeiros e utiliza algoritmos testados e comprovados. No entanto, é sempre importante lembrar que investimentos envolvem riscos e que nenhuma análise é 100% precisa. É recomendado usar o Yield Master como uma ferramenta complementar de apoio à sua própria análise e conhecimento do mercado."
-        },
-        "question8": {
-            "question": "O Yield Master oferece suporte ao cliente?",
-            "answer": "Sim, o Yield Master possui uma equipe de suporte ao cliente dedicada, pronta para auxiliar os usuários com quaisquer dúvidas ou problemas relacionados ao uso da plataforma. O suporte pode ser contatado por e-mail support@yieldmastr.io"
-        }
-    },
-    "Hero": {
-        "invest": "Invista de",
-        "smartly": "forma inteligente",
-        "start": "Começa hoje",
-        "learn": "Saber mais"
-    },
-    "WhyUs": {
-        "whyUs": "Por que nós",
-        "forAll": "Para todos",
-        "forAllDesc": "Não importa se você é iniciante ou um investidor experiente, o Yield Master foi projetado para atender a todas as necessidades. Com uma interface intuitiva e de fácil navegação, você terá todas as informações necessárias para tomar as melhores decisões de investimento, sem a necessidade de conhecimentos técnicos avançados.",
-        "help": "Nós ajudamos você",
-        "helpDesc": "Com o Yield Master você terá acesso a um sistema inteligente que analisa dados do mercado financeiro em tempo real, identificando os momentos mais favoráveis ​​para investir em empresas que tenham potencial de crescimento de dividendos. Nosso algoritmo exclusivo considera uma série de indicadores e tendências, fornecendo informações valiosas para você tomar suas decisões de investimento de forma mais estratégica.",
-        "join": "Junte-se a nós",
-        "joinDesc": "Com o Yield Master você terá acesso a um sistema inteligente que analisa dados do mercado financeiro em tempo real, identificando os momentos mais favoráveis ​​para investir em empresas que tenham potencial de crescimento de dividendos. Nosso algoritmo exclusivo considera uma série de indicadores e tendências, fornecendo informações valiosas para você tomar suas decisões de investimento de forma mais estratégica."
-    },
-    "literal": {
-        "or": "ou",
-        "signin": "Entrar",
-        "signup": "Inscrever-se",
-        "signout": "Sair"
-    },
-    
-    "sign": {
-
-        "inputs": {
-            "name": "Nome",
-            "email": "E-mail",
-            "password": "Senha",
-            "re-enter": "Digite novamente a senha"
-        },
-
-        "signin": {
-            "title": "Faça login em sua conta",
-            "forgotPassword": "Esqueceu sua senha?",
-            "sucessfully": "Usuário logado com sucesso",
-            "failed": "Usuário e/ou senha inválido(s)",
-            "footer": "Já tem uma conta?",
-            "google": "Faça login no Google",
-            "facebook": "Faça login com o Facebook"
-        },
-
-        "signup": {
-            "title": "Crie sua conta",
-            "sucessfully": "Usuário criado com sucesso",
-            "failed": "E-mail já cadastrado",
-            "footer": "Não tem uma conta?",
-            "google": "Continuar com o Google",
-            "facebook": "Continuar com o Facebook"
-        },
-
-        "terms-and-policies": {
-            "agree": "Ao entrar você concorda com nossos",
-            "terms": "termos de uso",
-            "and": "e",
-            "privacy": "políticas de privacidade"
-        },
-
-        "errors": {
-            "name": {
-                "min": "Obrigatório",
-                "max": "Máximo de caracteres: 80"
-            },
-            "email": {
-                "min": "Obrigatório",
-                "max": "Máximo de caracteres: 80",
-                "isValid": "Formato inválido"
-            },
-            "password": {
-                "min": "Mínimo de caracteres: 8",
-                "max": "Máximo de caracteres: 100",
-                "isWeak": "Senha fraca",
-                "isStrong": "Senha forte"
-            },
-            "reenter": {
-                "isEqual": "As senhas devem ser iguais"
-            }
-        }
+    "section3": {
+      "title": "Transparência e Confiança",
+      "content": "A confiança é a base de todo relacionamento financeiro bem-sucedido. A YieldMaster está comprometida com a transparência em todos os aspectos de nossas operações. Da comunicação clara ao fornecimento de dados abrangentes, acreditamos em promover a confiança de nossos clientes. Sua tranquilidade é nossa prioridade."
     }
+  },
+  "Checkout": {
+    "title": "Escolha métodos de pagamento",
+    "credit": "Cartão de Crédito / Débito",
+    "paypal": "PayPal",
+    "creditCard": "Detalhes do cartão de crédito/débito",
+    "paypalDetails": "Detalhes do PayPal",
+    "name": "Nome do titular do Cartão",
+    "number": "Número do cartão",
+    "cvv": "CVV",
+    "add": " Adicionar detalhes",
+    "email": "Email do Paypal",
+    "Summary": "Resumo",
+    "Price": "Preço",
+    "Discount": "Desconto",
+    "Total": "Total",
+    "Checkout": "Confira"
+  },
+  "Newsletter": {
+    "title": "Assine a nossa newsletter!",
+    "placeholder": "Digite seu e-mail",
+    "subscribe": "Se inscrever"
+  },
+  "PrivacyPolicy": {
+    "title": "Políticas de privacidade",
+    "policy1": {
+      "title": "Política de privacidade para Yield Master",
+      "content": "Na Yield Master, acessível em www.yieldmaster.io, uma das nossas principais prioridades é a privacidade dos nossos visitantes. Este documento de Política de Privacidade contém tipos de informações que são coletadas e registradas pela Yield Master e como as utilizamos. Se você tiver dúvidas adicionais ou precisar de mais informações sobre nossa Política de Privacidade, não hesite em nos contatar."
+    },
+    "policy2": {
+      "title": "Arquivos de registro",
+      "content": "Yield Master segue um procedimento padrão de uso de arquivos de log. Esses arquivos registram visitantes quando visitam sites. Todas as empresas de hospedagem fazem isso e fazem parte da análise dos serviços de hospedagem. As informações coletadas pelos arquivos de log incluem endereços de protocolo de Internet (IP), tipo de navegador, provedor de serviços de Internet (ISP), carimbo de data e hora, páginas de referência/saída e, possivelmente, o número de cliques. Eles não estão vinculados a nenhuma informação que seja pessoalmente identificável. O objetivo das informações é analisar tendências, administrar o site, rastrear o movimento dos usuários no site e coletar informações demográficas. Nossa Política de Privacidade foi criada com a ajuda do Gerador de Política de Privacidade."
+    },
+    "policy3": {
+      "title": "Cookies e web beacons",
+      "content": "Como qualquer outro site, o Yield Master utiliza “cookies”. Estes cookies são utilizados para armazenar informações, incluindo as preferências dos visitantes e as páginas do site que o visitante acessou ou visitou. As informações são usadas para otimizar a experiência dos usuários, personalizando o conteúdo da nossa página web com base no tipo de navegador dos visitantes e/ou outras informações. Para obter informações mais gerais sobre cookies, leia o artigo \"Cookies\" do Gerador de Política de Privacidade."
+    },
+    "policy4": {
+      "title": "Google DoubleClick DART Cookie",
+      "content": "O Google é um fornecedor terceirizado em nosso site. Ele também usa cookies, conhecidos como cookies DART, para veicular anúncios aos visitantes do nosso site com base em suas visitas a www.website.com e outros sites na Internet. No entanto, os visitantes podem optar por recusar o uso de cookies DART visitando o anúncio do Google e a Política de Privacidade da rede de conteúdo no seguinte URL – https://policies.google.com/technologies/ads"
+    },
+    "policy5": {
+      "title": "Políticas de privacidade",
+      "content": "Você pode consultar esta lista para encontrar a Política de Privacidade de cada um dos parceiros publicitários da Yield Master. Servidores de anúncios ou redes de anúncios de terceiros usam tecnologias como cookies, JavaScript ou Web Beacons que são usados ​​em seus respectivos anúncios e links que aparecem no Yield Master, que são enviados diretamente ao navegador dos usuários. Eles recebem automaticamente seu endereço IP quando isso ocorre. Essas tecnologias são usadas para medir a eficácia de suas campanhas publicitárias e/ou para personalizar o conteúdo publicitário que você vê nos sites que você visita. Observe que a Yield Master não tem acesso ou controle sobre esses cookies que são usados ​​por anunciantes terceiros."
+    },
+    "policy6": {
+      "title": "Políticas de privacidade de terceiros",
+      "content": "A Política de Privacidade da Yield Master não se aplica a outros anunciantes ou sites. Assim, aconselhamos que consulte as respetivas Políticas de Privacidade destes servidores de anúncios de terceiros para obter informações mais detalhadas. Pode incluir suas práticas e instruções sobre como cancelar determinadas opções. Você pode optar por desativar os cookies através das opções individuais do seu navegador. Para saber informações mais detalhadas sobre o gerenciamento de cookies com navegadores específicos, você pode encontrá-las nos respectivos sites dos navegadores."
+    },
+    "policy7": {
+      "title": "Informações infantis",
+      "content": "Outra parte da nossa prioridade é adicionar proteção às crianças durante o uso da Internet. Incentivamos os pais e responsáveis ​​a observar, participar e/ou monitorar e orientar suas atividades online. A Yield Master não coleta intencionalmente nenhuma informação pessoal identificável de crianças menores de 13 anos. Se você acha que seu filho forneceu esse tipo de informação em nosso site, recomendamos fortemente que você entre em contato conosco imediatamente e faremos nossos melhores esforços para prontamente remover tais informações de nossos registros."
+    },
+    "policy8": {
+      "title": "Política de privacidade on-line apenas",
+      "content": "Esta Política de Privacidade se aplica apenas às nossas atividades online e é válida para os visitantes do nosso site no que diz respeito às informações que eles compartilharam e/ou coletaram no Yield Master. Esta política não se aplica a quaisquer informações coletadas off-line ou por meio de canais que não sejam este site. Consentimento Ao usar nosso site, você concorda com nossa Política de Privacidade e concorda com seus Termos e Condições."
+    }
+  },
+  "Tos": {
+    "title": "Termos de uso",
+    "phase1": "1. Termos: Ao acessar ao site Yield Master, concorda em cumprir estes termos de serviço, todas as leis e regulamentos aplicáveis ​​e concorda que é responsável pelo cumprimento de todas as leis locais aplicáveis. Se você não concordar com algum desses termos, está proibido de usar ou acessar este site. Os materiais contidos neste site são protegidos pelas leis de direitos autorais e marcas comerciais aplicáveis.",
+    "phase2": "2. Uso de Licença: É concedida permissão para baixar temporariamente uma cópia dos materiais (informações ou software) no site Yield Master , apenas para visualização transitória pessoal e não comercial. Esta é a concessão de uma licença, não uma transferência de título e, sob esta licença, você não pode: modificar ou copiar os materiais; usar os materiais para qualquer finalidade comercial ou para exibição pública (comercial ou não comercial); tentar descompilar ou fazer engenharia reversa de qualquer software contido no site Yield Master; remover quaisquer direitos autorais ou outras notações de propriedade dos materiais; ou transferir os materiais para outra pessoa ou 'espelhe' os materiais em qualquer outro servidor.Esta licença será automaticamente rescindida se você violar alguma dessas restrições e poderá ser rescindida por Yield Master a qualquer momento. Ao encerrar a visualização desses materiais ou após o término desta licença, você deve apagar todos os materiais baixados em sua posse, seja em formato eletrónico ou impresso.",
+    "phase3": "3. Isenção de responsabilidade: Os materiais no site da Yield Master são fornecidos 'como estão'. Yield Master não oferece garantias, expressas ou implícitas, e, por este meio, isenta e nega todas as outras garantias, incluindo, sem limitação, garantias implícitas ou condições de comercialização, adequação a um fim específico ou não violação de propriedade intelectual ou outra violação de direitos.Além disso, o Yield Master não garante ou faz qualquer representação relativa à precisão, aos resultados prováveis ​​ou à confiabilidade do uso dos materiais em seu site ou de outra forma relacionado a esses materiais ou em sites vinculados a este site.",
+    "phase4": "4. Limitações: Em nenhum caso o Yield Master ou seus fornecedores serão responsáveis ​​por quaisquer danos (incluindo, sem limitação, danos por perda de dados ou lucro ou devido a interrupção dos negócios) decorrentes do uso ou da incapacidade de usar os materiais em Yield Master, mesmo que Yield Master ou um representante autorizado da Yield Master tenha sido notificado oralmente ou por escrito da possibilidade de tais danos. Como algumas jurisdições não permitem limitações em garantias implícitas, ou limitações de responsabilidade por danos conseqüentes ou incidentais, essas limitações podem não se aplicar a você.",
+    "phase5": "5. Precisão dos materiais: Os materiais exibidos no site da Yield Master podem incluir erros técnicos, tipográficos ou fotográficos. Yield Master não garante que qualquer material em seu site seja preciso, completo ou atual. Yield Master pode fazer alterações nos materiais contidos em seu site a qualquer momento, sem aviso prévio. No entanto, Yield Master não se compromete a atualizar os materiais.",
+    "phase6": "6. Links: Yield Master não revisou todos os sites vinculados ao seu site e não é responsável pelo conteúdo de nenhum site vinculado. A inclusão de qualquer link não implica endosso por Yield Master do site. O uso de qualquer site vinculado é por conta e risco do usuário.",
+    "phase7": "7. Modificações: A Yield Master pode revisar estes termos de serviço de seu site a qualquer momento, sem aviso prévio. Ao usar este site, você concorda em ficar vinculado à versão atual destes termos de serviço.",
+    "phase8": "8. Legislação aplicável: Estes termos e condições são regidos e interpretados de acordo com as leis do Yield Master e você se submete irrevogavelmente à jurisdição exclusiva dos tribunais naquele estado ou localidade."
+  },
+  "Footer": {
+    "home": "Home",
+    "pricing": "Preços",
+    "about": "Sobre nós",
+    "terms": "Termos de uso",
+    "policy": "Políticas de privacidade",
+    "contact": "Contatot",
+    "follow": "Siga-nos"
+  },
+  "Faq": {
+    "question1": {
+      "question": "Quais são os principais benefícios de utilizar o Yield Master?",
+      "answer": "O YIeld Master permite que você tome decisões de investimento mais estratégicas e embasadas, reduzindo o risco de perdas financeiras. Além disso, ele ajuda a maximizar o potencial de crescimento de seus dividendos, permitindo que você alcance seus objetivos financeiros mais rapidamente."
+    },
+    "question2": {
+      "question": "O Yield Master é adequado para investidores iniciantes?",
+      "answer": "Sim, o Yield Master pode ser utilizado por investidores iniciantes, pois fornece recomendações claras e objetivas. Ele ajuda a reduzir a complexidade do mercado financeiro e fornece orientações para tomar decisões de investimento mais fundamentadas."
+    },
+    "question3": {
+      "question": "Quais são as formas de pagamento?",
+      "answer": "Você pode pagar com Cartão de Crédito ou via Paypal, entre várias outras formas. "
+    },
+    "question4": {
+      "question": "E se perceber que não era pra mim?",
+      "answer": "Você tem 7 dias grátis para experimentar a plataforma. Se decidir que não é pra você basta pedir reembolso na plataforma ou enviar um e-mail para contact@yieldmaster.io"
+    },
+    "question5": {
+      "question": "Por quanto tempo terei acesso?",
+      "answer": "O Plano é Anual. Terá acesso pelo tempo que manter ativa sua assinatura."
+    },
+    "question6": {
+      "question": "O Yield Master fornece recomendações de compra e venda de ativos?",
+      "answer": "Sim, o Yield Master fornece recomendações de compra e venda de ativos com base em sua análise. No entanto, é sempre importante lembrar que essas recomendações são baseadas em análises e dados passados, e não garantem resultados futuros. Os investidores devem sempre avaliar as recomendações do Yield Master junto com sua própria análise e tomar suas próprias decisões de investimento."
+    },
+    "question7": {
+      "question": "Posso confiar nas análises e recomendações do Yield Master?",
+      "answer": "Sim, o Yield Master é desenvolvido por uma equipe de especialistas financeiros e utiliza algoritmos testados e comprovados. No entanto, é sempre importante lembrar que investimentos envolvem riscos e que nenhuma análise é 100% precisa. É recomendado usar o Yield Master como uma ferramenta complementar de apoio à sua própria análise e conhecimento do mercado."
+    },
+    "question8": {
+      "question": "O Yield Master oferece suporte ao cliente?",
+      "answer": "Sim, o Yield Master possui uma equipe de suporte ao cliente dedicada, pronta para auxiliar os usuários com quaisquer dúvidas ou problemas relacionados ao uso da plataforma. O suporte pode ser contatado por e-mail support@yieldmastr.io"
+    }
+  },
+  "Hero": {
+    "invest": "Invista de",
+    "smartly": "forma inteligente",
+    "start": "Começa hoje",
+    "learn": "Saber mais"
+  },
+  "WhyUs": {
+    "whyUs": "Por que nós",
+    "forAll": "Para todos",
+    "forAllDesc": "Não importa se você é iniciante ou um investidor experiente, o Yield Master foi projetado para atender a todas as necessidades. Com uma interface intuitiva e de fácil navegação, você terá todas as informações necessárias para tomar as melhores decisões de investimento, sem a necessidade de conhecimentos técnicos avançados.",
+    "help": "Nós ajudamos você",
+    "helpDesc": "Com o Yield Master você terá acesso a um sistema inteligente que analisa dados do mercado financeiro em tempo real, identificando os momentos mais favoráveis ​​para investir em empresas que tenham potencial de crescimento de dividendos. Nosso algoritmo exclusivo considera uma série de indicadores e tendências, fornecendo informações valiosas para você tomar suas decisões de investimento de forma mais estratégica.",
+    "join": "Junte-se a nós",
+    "joinDesc": "Com o Yield Master você terá acesso a um sistema inteligente que analisa dados do mercado financeiro em tempo real, identificando os momentos mais favoráveis ​​para investir em empresas que tenham potencial de crescimento de dividendos. Nosso algoritmo exclusivo considera uma série de indicadores e tendências, fornecendo informações valiosas para você tomar suas decisões de investimento de forma mais estratégica."
+  },
+  "literal": {
+    "or": "ou",
+    "signin": "Entrar",
+    "signup": "Inscrever-se",
+    "signout": "Sair"
+  },
+
+  "sign": {
+    "inputs": {
+      "name": "Nome",
+      "email": "E-mail",
+      "password": "Senha",
+      "re-enter": "Digite novamente a senha"
+    },
+
+    "signin": {
+      "title": "Faça login em sua conta",
+      "forgotPassword": "Esqueceu sua senha?",
+      "sucessfully": "Usuário logado com sucesso",
+      "failed": "Usuário e/ou senha inválido(s)",
+      "footer": "Já tem uma conta?",
+      "google": "Faça login no Google",
+      "facebook": "Faça login com o Facebook"
+    },
+
+    "signup": {
+      "title": "Crie sua conta",
+      "sucessfully": "Usuário criado com sucesso",
+      "failed": "E-mail já cadastrado",
+      "footer": "Não tem uma conta?",
+      "google": "Continuar com o Google",
+      "facebook": "Continuar com o Facebook"
+    },
+
+    "terms-and-policies": {
+      "agree": "Ao entrar você concorda com nossos",
+      "terms": "termos de uso",
+      "and": "e",
+      "privacy": "políticas de privacidade"
+    },
+
+    "errors": {
+      "name": {
+        "min": "Obrigatório",
+        "max": "Máximo de caracteres: 80"
+      },
+      "email": {
+        "min": "Obrigatório",
+        "max": "Máximo de caracteres: 80",
+        "isValid": "Formato inválido"
+      },
+      "password": {
+        "min": "Mínimo de caracteres: 8",
+        "max": "Máximo de caracteres: 100",
+        "isWeak": "Senha fraca",
+        "isStrong": "Senha forte"
+      },
+      "reenter": {
+        "isEqual": "As senhas devem ser iguais"
+      }
+    }
+  }
 }

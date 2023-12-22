@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 input:focus {
   outline: none;
 }
@@ -15,25 +14,23 @@ input:focus {
   .contained {
     @apply bg-black text-white dark:bg-[#FFF] dark:text-[#000] font-semibold rounded-md flex justify-center;
   }
-
 }
 
 @layer base {
   :root {
-    --color-primary: #FFF;
+    --color-primary: #fff;
     --color-secundary: #000;
     --title-color: #1A;
     --text-color-primary: #21262b;
   }
-  
+
   .dark {
     --color-primary: #21262b;
     --color-secundary: #303236;
-    --title-color: #FFF;
-    --text-color-primary: #CACACA;
+    --title-color: #fff;
+    --text-color-primary: #cacaca;
   }
 }
-
 
 /* :root {
   --color-primary: #F9F4F5;
@@ -55,13 +52,12 @@ input:focus {
   @apply rounded-xl border border-gray-200 bg-white/20 shadow-md backdrop-blur
   dark:bg-black/20
   dark:bg-gradient-to-b from-black/80 to-black/40
-  dark:border-gray-800
-  ;
+  dark:border-gray-800;
 }
 
 .showcase {
   min-height: 100vh;
-  @apply w-full ;
+  @apply w-full;
   background-image: url("../assets/hero.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -72,7 +68,7 @@ input:focus {
 }
 
 .footer {
-  @apply w-full z-10 relative;
+  @apply w-full;
   background-image: url("../assets/footer.svg");
   background-repeat: no-repeat;
   background-position: center center;
