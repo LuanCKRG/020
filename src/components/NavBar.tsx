@@ -33,10 +33,10 @@ export const NavBar = () => {
             <ToggleLocaleButton />
             <ToggleThemeButton />
             <Link href="/signin">
-                  <button className="contained px-4 py-2">
-                    Entrar
-                  </button>
-                </Link>
+              <button className="contained px-4 py-2">
+                Entrar
+              </button>
+            </Link>
           </div>
 
           <button className="sm:hidden" onClick={() => setIsMobileMenuOpen(prev => !prev)}>
