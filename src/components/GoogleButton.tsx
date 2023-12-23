@@ -1,5 +1,5 @@
 "use client";
-import { signinGoogle } from "@/lib/supabase/auth";
+import { signinGoogle } from "@/lib/firebase/auth";
 import { FcGoogle } from "react-icons/fc";
 
 export const GoogleButton = () => {
