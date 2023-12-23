@@ -4,7 +4,6 @@ import { FcGoogle } from "react-icons/fc"
 import {GoogleButton} from "@/components/GoogleButton"
 import { FaFacebook } from "react-icons/fa"
 import { Link } from "@/navigation"
-import { signinGoogle } from "@/lib/supabase/auth"
 
 
 const SignupPage = () => {
