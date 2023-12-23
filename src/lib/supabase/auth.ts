@@ -3,6 +3,7 @@
 import { cookies } from "next/headers";
 import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import { Database } from "@/types/supabase";
+import { redirect } from "next/navigation";
 
 const cookieStore = cookies();
 
@@ -75,4 +76,6 @@ export const signinGoogle = async () => {
 
   console.log(data);
   console.error("error" + error);
+
+  return redirect(data.url!);
 };
