@@ -6,6 +6,7 @@ import people from "@/assets/people.svg";
 import newsletter from "@/assets/newsletter.svg";
 import Image from "next/image";
 import FaqCard from "@/components/FaqCard";
+import { SignOutButton } from "@/components/SignOutButton";
 
 const Home = () => {
   const t = useTranslations("Hero");
@@ -183,6 +184,7 @@ const Home = () => {
           </button>
         </form>
       </div>
+      <SignOutButton />
     </>
   );
 };
