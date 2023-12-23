@@ -1,8 +1,10 @@
 import { FormSignup } from "@/components/FormSignup"
 import { useTranslations } from "next-intl"
 import { FcGoogle } from "react-icons/fc"
+import {GoogleButton} from "@/components/GoogleButton"
 import { FaFacebook } from "react-icons/fa"
 import { Link } from "@/navigation"
+import { signinGoogle } from "@/lib/supabase/auth"
 
 
 const SignupPage = () => {
@@ -20,10 +22,7 @@ const SignupPage = () => {
         {t("literal.or")}
       </p>
 
-      <button className="outlined text-sm font-semibold py-3 gap-x-2">
-        <FcGoogle size={20} />
-        {t("sign.signup.google")}
-      </button>
+      <GoogleButton />
 
       <button className="outlined text-sm font-semibold py-3 gap-x-2">
         <FaFacebook className="text-blue-500" size={20} />
@@ -41,7 +40,7 @@ const SignupPage = () => {
         </Link>
       </p>
 
-    <p className="text-sm text-primary underline font-bold">
+      <p className="text-sm text-primary underline font-bold">
       <Link href="/disclaimer">
         Disclaimer
       </Link>

@@ -37,7 +37,7 @@ const Home = () => {
     <>
       <main className="showcase dark:text-black">
         <div className="w-full max-w-7xl min-h-screen flex flex-col gap-2 justify-center items-center sm:items-start px-6 sm:px-10 ">
-          <div className="flex items-center gap-2 mt-48 sm:mt-20">
+          <div className="flex items-center gap-2 sm:mt-20">
             <div className="w-8 sm:w-12 h-8 sm:h-12 rounded-full grid place-items-center bg-black">
               <p className="text-xs sm:text-sm font-inter font-semibold text-white">
                 ym.
