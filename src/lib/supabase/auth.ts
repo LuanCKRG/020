@@ -72,6 +72,12 @@ export const gogole = async () => {
 export const signinGoogle = async () => {
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider: "google",
+    options: {
+      queryParams: {
+        user_name: "name",
+        email: "email",
+      },
+    },
   });
 
   console.log(data);
