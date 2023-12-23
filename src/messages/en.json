@@ -191,7 +191,8 @@
       "agree": "By entering you agree to our",
       "terms": "terms of use",
       "and": "and",
-      "privacy": "privacy policies"
+      "privacy": "privacy policies",
+      "disclaimer": "disclaimer"
     },
 
     "errors": {
@@ -212,6 +213,9 @@
       },
       "reenter": {
         "isEqual": "Passwords don't match"
+      },
+      "agree": {
+        "isNotChecked": "You need agree, please"
       }
     }
   }

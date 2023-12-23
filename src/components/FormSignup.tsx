@@ -12,8 +12,10 @@ import { AiOutlineLoading } from "react-icons/ai";
 import { createUser, getUserByEmail } from "@/lib/supabase/auth";
 import { useRouter } from "next/navigation";
 import { UserAlreadyExistsError } from "@/errors/UserAlreadyExists";
+import { useAuth } from "@/providers/AuthProvider";
 
 export const FormSignup = () => {
+  const { user } = useAuth();
   const [message, setMessage] = useState<{
     text: string;
     error: boolean;
@@ -57,10 +59,15 @@ export const FormSignup = () => {
         .min(4, t("sign.errors.password.min"))
         .max(100, t("sign.errors.password.max")),
       reenter: z.string(),
+      agree: z.boolean(),
     })
     .refine(({ password, reenter }) => password === reenter, {
       path: ["reenter"],
       message: t("sign.errors.reenter.isEqual"),
+    })
+    .refine(({ agree }) => agree === true, {
+      path: ["agree"],
+      message: t("sign.errors.agree.isNotChecked"),
     });
 
   type createUserFormData = z.infer<typeof createUserSchema>;
@@ -98,6 +105,7 @@ export const FormSignup = () => {
 
   return (
     <FormProvider {...createUserForm}>
+      <pre>{JSON.stringify(user, null, 2)}</pre>
       <form onSubmit={handleSubmit(handleCreateUser)}>
         <div className="flex flex-col gap-y-4">
           <Form.Field>
@@ -155,22 +163,37 @@ export const FormSignup = () => {
               {message.text}!
             </p>
           )}
-          <label className="flex gap-x-3">
-            <input className="size-4" type="checkbox" />
-            <p className="text-primary text-sm">
-              {t("sign.terms-and-policies.agree") + " "}
+          <Form.Field>
+            <label className="flex gap-x-3">
+              <Form.Input
+                className="size-4"
+                type="checkbox"
+                name="agree"
+                placeholder={t("sign.inputs.name")}
+              />
+              <p className="text-primary text-sm">
+                {t("sign.terms-and-policies.agree") + " "}
 
-              <Link href="/terms-of-use" className="font-bold">
-                {t("sign.terms-and-policies.terms")}
-              </Link>
+                <Link href="/terms-of-use" className="font-bold">
+                  {t("sign.terms-and-policies.terms")}
+                </Link>
 
-              {" " + t("sign.terms-and-policies.and") + " "}
+                {" " + t("sign.terms-and-policies.and") + " "}
 
-              <Link href="/privacy-policies" className="font-bold">
-                {t("sign.terms-and-policies.privacy")}
-              </Link>
-            </p>
-          </label>
+                <Link href="/privacy-policies" className="font-bold">
+                  {t("sign.terms-and-policies.privacy")}
+                </Link>
+
+                {" " + t("sign.terms-and-policies.and") + " "}
+
+                <Link href="/disclaimer" className="font-bold">
+                  {t("sign.terms-and-policies.disclaimer")}
+                </Link>
+              </p>
+            </label>
+
+            <Form.ErrorMessage field="agree" />
+          </Form.Field>
 
           <button className="contained py-3" disabled={isSubmitting}>
             {isSubmitting ? (

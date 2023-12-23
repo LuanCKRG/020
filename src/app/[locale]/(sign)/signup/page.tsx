@@ -2,6 +2,7 @@ import { FormSignup } from "@/components/FormSignup"
 import { useTranslations } from "next-intl"
 import { FcGoogle } from "react-icons/fc"
 import {GoogleButton} from "@/components/GoogleButton"
+import {FacebookButton} from "@/components/FacebookButton"
 import { FaFacebook } from "react-icons/fa"
 import { Link } from "@/navigation"
 
@@ -22,6 +23,7 @@ const SignupPage = () => {
       </p>
 
       <GoogleButton />
+      <FacebookButton />
 
       <button className="outlined text-sm font-semibold py-3 gap-x-2">
         <FaFacebook className="text-blue-500" size={20} />

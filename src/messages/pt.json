@@ -191,7 +191,8 @@
       "agree": "Ao entrar você concorda com nossos",
       "terms": "termos de uso",
       "and": "e",
-      "privacy": "políticas de privacidade"
+      "privacy": "políticas de privacidade",
+      "disclaimer": "disclaimer"
     },
 
     "errors": {
@@ -212,6 +213,9 @@
       },
       "reenter": {
         "isEqual": "As senhas devem ser iguais"
+      },
+      "agree": {
+        "isNotChecked": "Por favor, concorde com os termos"
       }
     }
   }

@@ -69,6 +69,16 @@ export const gogole = async () => {
   console.log(error);
 };
 
+export const signinGoogle = async () => {
+  const { data, error } = await supabase.auth.signInWithOAuth({
+    provider: "google",
+  });
+  console.log(data);
+  console.error(error);
+  return redirect(data.url!);
+};
+
 export const signOut = async () => {
   await supabase.auth.signOut();
 };
+// https://stackoverflow.com/questions/46135993/how-to-change-the-app-name-for-firebase-authentication-what-the-user-sees
