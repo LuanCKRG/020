@@ -9,9 +9,11 @@ import { FiEye, FiEyeOff } from "react-icons/fi";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { AiOutlineLoading } from "react-icons/ai";
-import { createUser, getUserByEmail } from "@/lib/supabase/auth";
+import { getUserByEmail, createUser } from "@/lib/supabase/auth";
 import { useRouter } from "next/navigation";
 import { UserAlreadyExistsError } from "@/errors/UserAlreadyExists";
+import { useAuth } from "@/providers/AuthProvider";
+import { FirebaseError } from "firebase/app";
 
 export const FormSignup = () => {
   const [message, setMessage] = useState<{
@@ -57,10 +59,15 @@ export const FormSignup = () => {
         .min(4, t("sign.errors.password.min"))
         .max(100, t("sign.errors.password.max")),
       reenter: z.string(),
+      agree: z.boolean(),
     })
     .refine(({ password, reenter }) => password === reenter, {
       path: ["reenter"],
       message: t("sign.errors.reenter.isEqual"),
+    })
+    .refine(({ agree }) => agree === true, {
+      path: ["agree"],
+      message: t("sign.errors.agree.isNotChecked"),
     });
 
   type createUserFormData = z.infer<typeof createUserSchema>;
@@ -89,7 +96,10 @@ export const FormSignup = () => {
       refresh();
     } catch (err) {
       if (err instanceof UserAlreadyExistsError) {
-        setMessage({ text: t("sign.signup.failed"), error: true });
+        setMessage({
+          text: t("sign.signup.failed"),
+          error: true,
+        });
       } else {
         throw err;
       }
@@ -155,22 +165,37 @@ export const FormSignup = () => {
               {message.text}!
             </p>
           )}
-          <label className="flex gap-x-3">
-            <input className="size-4" type="checkbox" />
-            <p className="text-primary text-sm">
-              {t("sign.terms-and-policies.agree") + " "}
+          <Form.Field>
+            <label className="flex gap-x-3">
+              <Form.Input
+                className="size-4"
+                type="checkbox"
+                name="agree"
+                placeholder={t("sign.inputs.name")}
+              />
+              <p className="text-primary text-sm">
+                {t("sign.terms-and-policies.agree") + " "}
 
-              <Link href="/terms-of-use" className="font-bold">
-                {t("sign.terms-and-policies.terms")}
-              </Link>
+                <Link href="/terms-of-use" className="font-bold">
+                  {t("sign.terms-and-policies.terms")}
+                </Link>
 
-              {" " + t("sign.terms-and-policies.and") + " "}
+                {" " + t("sign.terms-and-policies.and") + " "}
 
-              <Link href="/privacy-policies" className="font-bold">
-                {t("sign.terms-and-policies.privacy")}
-              </Link>
-            </p>
-          </label>
+                <Link href="/privacy-policies" className="font-bold">
+                  {t("sign.terms-and-policies.privacy")}
+                </Link>
+
+                {" " + t("sign.terms-and-policies.and") + " "}
+
+                <Link href="/disclaimer" className="font-bold">
+                  {t("sign.terms-and-policies.disclaimer")}
+                </Link>
+              </p>
+            </label>
+
+            <Form.ErrorMessage field="agree" />
+          </Form.Field>
 
           <button className="contained py-3" disabled={isSubmitting}>
             {isSubmitting ? (

@@ -184,7 +184,6 @@ const Home = () => {
           </button>
         </form>
       </div>
-      <SignOutButton />
     </>
   );
 };

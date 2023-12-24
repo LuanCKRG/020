@@ -61,14 +61,15 @@ export const signinUser = async (email: string, password: string) => {
   return { error };
 };
 
-export const gogole = async () => {
-  const { data, error } = await supabase.auth.signInWithOAuth({
-    provider: "google",
-  });
-  console.log(data);
-  console.log(error);
-};
-
 export const signOut = async () => {
   await supabase.auth.signOut();
+};
+// https://stackoverflow.com/questions/46135993/how-to-change-the-app-name-for-firebase-authentication-what-the-user-sees
+
+export const getUser = async () => {
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  return { user };
 };

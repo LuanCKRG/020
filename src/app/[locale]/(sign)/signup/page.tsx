@@ -2,6 +2,7 @@ import { FormSignup } from "@/components/FormSignup"
 import { useTranslations } from "next-intl"
 import { FcGoogle } from "react-icons/fc"
 import {GoogleButton} from "@/components/GoogleButton"
+import {FacebookButton} from "@/components/FacebookButton"
 import { FaFacebook } from "react-icons/fa"
 import { Link } from "@/navigation"
 
@@ -21,12 +22,8 @@ const SignupPage = () => {
         {t("literal.or")}
       </p>
 
-      <GoogleButton />
-
-      <button className="outlined text-sm font-semibold py-3 gap-x-2">
-        <FaFacebook className="text-blue-500" size={20} />
-        {t("sign.signup.facebook")}
-      </button>
+      <GoogleButton text={t("sign.signup.google")} />
+      {/* <FacebookButton /> */}
 
       <p className="text-primary text-sm">
         {t("sign.terms-and-policies.agree") + " "}
@@ -37,13 +34,11 @@ const SignupPage = () => {
         <Link href="/privacy-policies" className="font-bold">
           {t("sign.terms-and-policies.privacy")}
         </Link>
+        {" " + t("sign.terms-and-policies.and") + " "}
+        <Link href="/disclaimer" >
+          Disclaimer
+        </Link>
       </p>
-
-      <p className="text-sm text-primary underline font-bold">
-      <Link href="/disclaimer">
-        Disclaimer
-      </Link>
-    </p>
 
       <p className="text-primary text-sm font-medium">
         {t("sign.signup.footer") + " "}
