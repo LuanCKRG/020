@@ -5,15 +5,13 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { FormProvider, useForm, SubmitHandler } from "react-hook-form";
 import { Form } from "@/patterns/Form";
 import { Link } from "@/navigation";
-import { FiEye, FiEyeOff } from "react-icons/fi";
+// import { FiEye, FiEyeOff } from "react-icons/fi";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { AiOutlineLoading } from "react-icons/ai";
 import { getUserByEmail, createUser } from "@/lib/supabase/auth";
 import { useRouter } from "next/navigation";
 import { UserAlreadyExistsError } from "@/errors/UserAlreadyExists";
-import { useAuth } from "@/providers/AuthProvider";
-import { FirebaseError } from "firebase/app";
 
 export const FormSignup = () => {
   const [message, setMessage] = useState<{
