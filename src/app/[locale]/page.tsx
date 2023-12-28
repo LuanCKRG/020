@@ -6,7 +6,6 @@ import people from "@/assets/people.svg";
 import newsletter from "@/assets/newsletter.svg";
 import Image from "next/image";
 import FaqCard from "@/components/FaqCard";
-import { SignOutButton } from "@/components/SignOutButton";
 
 const Home = () => {
   const t = useTranslations("Hero");
@@ -178,7 +177,8 @@ const Home = () => {
 
           <button
             type="submit"
-            className="px-4 py-2 whitespace-nowrap bg-orange text-white border border-orange text-base font-semibold font-inter hover:bg-opacity-80"
+            className="cursor-not-allowed px-4 py-2 whitespace-nowrap bg-orange text-white border border-orange text-base font-semibold font-inter hover:bg-opacity-80"
+            disabled
           >
             {tNewsletter("subscribe")}
           </button>

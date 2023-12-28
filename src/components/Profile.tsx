@@ -1,8 +1,7 @@
-import { createServerSupabaseClient } from "@/lib/supabase/auth";
 import { cookies } from "next/headers";
-import { createServerClient, type CookieOptions } from "@supabase/ssr";
+import { createServerClient } from "@supabase/ssr";
 import { Database } from "@/types/supabase";
-import { ProfileMenu } from "@/components/ProfileMenu";
+import { ProfileDropdown } from "@/components/ProfileDropdown";
 import { Link } from "@/navigation";
 
 export const Profile = async () => {
@@ -31,5 +30,9 @@ export const Profile = async () => {
     );
   }
 
-  return <ProfileMenu />;
+  return (
+    <div className="relative">
+      <ProfileDropdown />;
+    </div>
+  );
 };

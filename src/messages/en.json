@@ -153,6 +153,14 @@
     "join": "Junte-se a nós",
     "joinDesc": "Com o Yield Master você terá acesso a um sistema inteligente que analisa dados do mercado financeiro em tempo real, identificando os momentos mais favoráveis ​​para investir em empresas que tenham potencial de crescimento de dividendos. Nosso algoritmo exclusivo considera uma série de indicadores e tendências, fornecendo informações valiosas para você tomar suas decisões de investimento de forma mais estratégica."
   },
+
+  "navigation": {
+    "home": "Home",
+    "price": "Price",
+    "about": "About",
+    "dashboard": "Dashboard"
+  },
+
   "literal": {
     "or": "or",
     "signin": "Sign In",
